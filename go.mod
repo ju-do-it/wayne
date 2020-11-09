@@ -30,5 +30,16 @@ require (
 	k8s.io/api v0.17.2
 	k8s.io/apiextensions-apiserver v0.17.2
 	k8s.io/apimachinery v0.17.2
-	k8s.io/client-go v0.17.2
+	k8s.io/client-go v11.0.0+incompatible
+	k8s.io/klog v1.0.0 // indirect
+	k8s.io/utils v0.0.0-20191114184206-e782cd3c129f // indirect
+	sigs.k8s.io/yaml v1.1.0 // indirect
 )
+
+replace (
+	k8s.io/api => k8s.io/api v0.0.0-20191004102349-159aefb8556b
+	k8s.io/apiextensions-apiserver => k8s.io/apiextensions-apiserver v0.0.0-20191004105649-b14e3c49469a
+	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20191004074956-c5d2f014d689
+	sigs.k8s.io/controller-runtime => sigs.k8s.io/controller-runtime v0.3.0
+)
+
